@@ -4,6 +4,7 @@ package com.thinkbites.roborest;
 import java.util.List;
 
 import com.octo.android.robospice.SpiceManager;
+import com.octo.android.robospice.request.SpiceRequest;
 import com.octo.android.robospice.request.listener.RequestListener;
 import com.thinkbites.roborest.helpers.RequestFactory;
 import com.thinkbites.roborest.requests.RequestCreate;
@@ -13,13 +14,17 @@ import com.thinkbites.roborest.requests.RequestShow;
 import com.thinkbites.roborest.requests.RequestUpdate;
 
 /**
- * 
+ * The RequestManager is simply a wrapper around the {@link SpiceManager} to consume
+ * {@link SpiceRequest} with ease
  * @author mono
  *
  * @param <T>
  */
 public class RequestManager<T,RestInterface extends RestApi<T>> {
 	
+	/**
+	 * reference to the current spice manager
+	 */
 	protected SpiceManager manager;
 	protected RequestFactory<T,RestInterface> requestFactory;
 	
@@ -28,6 +33,10 @@ public class RequestManager<T,RestInterface extends RestApi<T>> {
 		this.requestFactory = requestFactory;
 	}
 	
+	/**
+	 * 
+	 * @return returns an instance of the current spice manager
+	 */
 	public SpiceManager getSpiceManager(){
 		return manager;
 	}

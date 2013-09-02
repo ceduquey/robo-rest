@@ -12,7 +12,7 @@ import com.thinkbites.roborest.requests.RequestUpdate;
 /**
  * Helper class to construct the different request objects.
  * Currently only {@link RequestCreate}, {@link RequestDelete}, {@link RequestShow}
- * {@link RequestIndex} and {@link RequestUpdate} are supported
+ * {@link RequestIndex} and {@link RequestUpdate} are supported (the default RESTful actions)
  * @author mono
  *
  * @param <T>
@@ -24,11 +24,11 @@ public class RequestFactory<T, RestInterface extends RestApi<T>> {
 	private Class<List<T>> pojoListClazz;
 	private Class<RestInterface> restApiClazz;
 	
-	public RequestFactory(Class<T> pojoClazz, Class<List<T>> pojoListClazz,
+	public RequestFactory(Class<T> pojoClazz,
 			Class<RestInterface> restApiClazz, String serverUrl) {
 		super();
 		this.pojoClazz = pojoClazz;
-		this.pojoListClazz = pojoListClazz;
+		this.pojoListClazz = ApiHelper.getServicesListClass(pojoClazz);
 		this.restApiClazz = restApiClazz;
 		this.serverUrl = serverUrl;
 	}
