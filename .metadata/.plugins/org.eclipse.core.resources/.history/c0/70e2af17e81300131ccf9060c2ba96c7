@@ -1,7 +1,0 @@
-package com.thinkbites.robospice.test;
-
-import com.thinkbites.robospice.RestApi;
-
-public interface ServicesApi extends RestApi<Service> {
-
-}

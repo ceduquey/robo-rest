@@ -1,7 +1,0 @@
-package com.thinkbites.robospice.test;
-
-public class Snippet {
-	@GET("/repos/{owner}/{repo}/contributors")
-	    Contributor.List contributors(@Path("owner") String owner, @Path("repo") String repo);
-}
-

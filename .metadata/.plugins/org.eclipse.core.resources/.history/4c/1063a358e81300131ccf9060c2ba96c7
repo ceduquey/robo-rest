@@ -1,9 +1,0 @@
-package com.thinkbites.robospice.test;
-
-import com.thinkbites.robospice.requests.RequestIndex;
-
-public class ServicesIndex extends RequestIndex<Service, ServicesApi> {
-
-	
-
-}
