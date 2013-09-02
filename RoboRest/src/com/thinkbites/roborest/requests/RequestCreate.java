@@ -12,6 +12,10 @@ public class RequestCreate<T,RestInterface extends RestApi<T>> extends RetrofitS
 		super(clazz, retrofitedInterfaceClass);
 		this.data = data;
 	}
+	
+	public T getData() {
+		return data;
+	}
 
 	@Override
 	public T loadDataFromNetwork() throws Exception {

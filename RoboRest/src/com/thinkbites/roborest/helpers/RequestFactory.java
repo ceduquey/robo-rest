@@ -38,6 +38,7 @@ public class RequestFactory<T, RestInterface extends RestApi<T>> {
 	 * @param data
 	 * @return returns an instance of {@link RequestCreate} 
 	 */
+	@SuppressWarnings("unchecked")
 	public RequestCreate<T,RestInterface> create(T data){
 		RequestCreate<T, RestInterface> request =  new RequestCreate<T,RestInterface>(pojoClazz, restApiClazz, data);
 		request.setService((RestInterface)ApiHelper.create(restApiClazz, serverUrl));

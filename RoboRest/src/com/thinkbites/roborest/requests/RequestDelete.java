@@ -12,6 +12,10 @@ public class RequestDelete<T,RestInterface extends RestApi<T>> extends RetrofitS
 		this.id = id;
 	}
 
+	public String getId() {
+		return id;
+	}
+
 	@Override
 	public Void loadDataFromNetwork() throws Exception {
 		getService().destroy(id);

@@ -12,6 +12,10 @@ public class RequestShow<T,RestInterface extends RestApi<T>> extends RetrofitSpi
 		super(clazz, retrofitedInterfaceClass);
 		this.id = id;
 	}
+	
+	public String getId() {
+		return id;
+	}
 
 	@Override
 	public T loadDataFromNetwork() throws Exception {
