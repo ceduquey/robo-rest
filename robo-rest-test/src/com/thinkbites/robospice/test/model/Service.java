@@ -1,4 +1,4 @@
-package com.thinkbites.robospice.test;
+package com.thinkbites.robospice.test.model;
 
 public class Service {
 
