@@ -1,0 +1,5 @@
+package com.thinkbites.robospice.test;
+
+public interface Github {
+
+}

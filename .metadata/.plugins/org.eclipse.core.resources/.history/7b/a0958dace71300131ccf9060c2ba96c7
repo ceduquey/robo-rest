@@ -1,0 +1,8 @@
+package com.thinkbites.robospice.test;
+
+import com.thinkbites.robospice.RestApi;
+
+public interface Github extends RestApi<Contributor>{
+
+	
+}

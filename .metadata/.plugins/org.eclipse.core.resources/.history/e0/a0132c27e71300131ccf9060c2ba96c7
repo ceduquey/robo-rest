@@ -1,0 +1,8 @@
+public class Contributor {
+    public String login;
+    public int contributions;
+
+    @SuppressWarnings("serial")
+    public static class List extends ArrayList<Contributor> {
+    }
+}

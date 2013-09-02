@@ -1,0 +1,13 @@
+package com.thinkbites.robospice.test;
+
+public class Service {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

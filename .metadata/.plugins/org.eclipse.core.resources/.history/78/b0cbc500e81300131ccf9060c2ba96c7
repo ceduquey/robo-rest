@@ -1,0 +1,7 @@
+package com.thinkbites.robospice.test;
+
+public class Service {
+
+	private String address;
+
+}

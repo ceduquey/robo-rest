@@ -1,0 +1,16 @@
+package com.thinkbites.robospice.test;
+
+import java.util.List;
+
+import com.thinkbites.robospice.requests.RequestIndex;
+
+public class ServicesIndex extends RequestIndex<Service, ServicesApi> {
+
+	public ServicesIndex(Class<List<Service>> clazz,
+			Class<ServicesApi> retrofitedInterfaceClass) {
+		super(clazz, ServicesApi.class);
+	}
+
+	
+
+}

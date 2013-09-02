@@ -1,0 +1,13 @@
+package com.thinkbites.robospice.test;
+
+import java.util.List;
+
+import com.thinkbites.robospice.RestApi;
+
+import retrofit.http.GET;
+import retrofit.http.Path;
+
+public interface Github extends RestApi<Contributor>{
+
+	
+}
