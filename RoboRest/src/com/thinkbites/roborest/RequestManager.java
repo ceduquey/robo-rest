@@ -7,11 +7,6 @@ import com.octo.android.robospice.SpiceManager;
 import com.octo.android.robospice.request.SpiceRequest;
 import com.octo.android.robospice.request.listener.RequestListener;
 import com.thinkbites.roborest.helpers.RequestFactory;
-import com.thinkbites.roborest.requests.RequestCreate;
-import com.thinkbites.roborest.requests.RequestDelete;
-import com.thinkbites.roborest.requests.RequestIndex;
-import com.thinkbites.roborest.requests.RequestShow;
-import com.thinkbites.roborest.requests.RequestUpdate;
 
 /**
  * The RequestManager is simply a wrapper around the {@link SpiceManager} to consume
@@ -47,8 +42,7 @@ public class RequestManager<T,RestInterface extends RestApi<T>> {
 	 * @param data
 	 */
 	public void create(RequestListener<T> requestListener, T data){
-		RequestCreate<T,RestInterface> create = requestFactory.create(data);
-		manager.execute(create, requestListener);
+		throw new RuntimeException("operation not implemented yet");
 	}
 	
 	/**
@@ -57,8 +51,7 @@ public class RequestManager<T,RestInterface extends RestApi<T>> {
 	 * @param id
 	 */
 	public void delete(RequestListener<Object> requestListener, String id){
-		RequestDelete<T,RestInterface> request = requestFactory.delete(id);
-		manager.execute(request, requestListener);
+		throw new RuntimeException("operation not implemented yet");
 	}
 	
 	/**
@@ -66,8 +59,7 @@ public class RequestManager<T,RestInterface extends RestApi<T>> {
 	 * @param requestListener
 	 */
 	public void index(RequestListener<List<T>> requestListener){
-		RequestIndex<T,RestInterface> index = requestFactory.index();
-		manager.execute(index, requestListener);
+		throw new RuntimeException("operation not implemented yet");
 	}
 	
 	/**
@@ -76,8 +68,7 @@ public class RequestManager<T,RestInterface extends RestApi<T>> {
 	 * @param id
 	 */
 	public void show(RequestListener<T> requestListener, String id){
-		RequestShow<T,RestInterface> show = requestFactory.show(id);
-		manager.execute(show, requestListener);
+		throw new RuntimeException("operation not implemented yet");
 	}
 	
 	/**
@@ -89,8 +80,7 @@ public class RequestManager<T,RestInterface extends RestApi<T>> {
 	 * @param data the new resource
 	 */
 	public void update(RequestListener<T> requestListener, String id, T data){
-		RequestUpdate<T,RestInterface> dupdate = requestFactory.update(id, data);
-		manager.execute(dupdate, requestListener);
+		throw new RuntimeException("operation not implemented yet");
 	}
 
 }
