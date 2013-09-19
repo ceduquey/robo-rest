@@ -17,6 +17,4 @@ public class ServicesIndex extends RequestIndex<Service, ServicesApi> {
 		return ApiHelper.getServicesListClass(Service.class);
 	}
 
-	
-
 }
